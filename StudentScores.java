@@ -28,20 +28,28 @@ public class StudentScores {
         double finalScore = (0.2 * assign) + (0.2 * quiz) + (0.3 * midterm) + (0.2 * finalExam);
 
         String scoreAlphabet;
+        String qualification;
         if (finalScore > 80 && finalScore <= 100) {
             scoreAlphabet = "A";
+            qualification = "Great";
         } else if (finalScore > 73) {
             scoreAlphabet = "B+";
+            qualification = "More than Great";
         } else if (finalScore > 65) {
             scoreAlphabet = "B";
+            qualification = "Good";
         } else if (finalScore > 60) {
             scoreAlphabet = "C+";
+            qualification = "More than Enough";
         } else if (finalScore > 50) {
             scoreAlphabet = "C";
+            qualification = "Enough";
         } else if (finalScore > 39) {
             scoreAlphabet = "D";
+            qualification = "Less";
         } else {
             scoreAlphabet = "E";
+            qualification = "Failed";
         }
 
         if (scoreAlphabet.equals("A") ||
